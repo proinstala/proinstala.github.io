@@ -43,7 +43,8 @@ body {
 }
 
 .navbar a:hover {
-	background: #1D2F3D;
+	/*background: #1D2F3D;*/
+	background: #80488F;
 	color: #fff;
 	text-decoration: none;
 }
@@ -59,12 +60,50 @@ body {
 /* * ============================== */
 /* * ===== CONTENEDOR IMAGEN ====== */
 /* * ============================== */
-
+/*
 .contenedor-imagen {
-	height: 100vh;
+	height: 100vh; 
+	overflow: auto; /* con esto adaptamos el contenedor al contenido .para mejorar, hay que quitar esto y cambiar el tamaño a la imagen /
+	background-color: white;
 }
 
 .contenedor-imagen img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+footer .contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 top;
+}
+*/
+
+.contenedor-imagen {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: white;
+}
+
+.contenedor-imagen img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	/*width: 80%;*/
+	/*height: 50%;*/
+	/*vertical-align: bottom;
+	object-fit: cover;
+	object-position: 0 bottom;*/
+}
+
+footer .contenedor-imagen img {
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
@@ -135,9 +174,35 @@ footer .navbar {
 	bottom: 0;
 }
 
+.pie{
+	background-color: #333333;
+	color: #b2b2b2;
+	height: 150px;
+}
+
+#pie_derecho {
+	float: left;	    
+    width: 29.9%;
+    height: 100%;
+}
+
+#pie_izquierdo{
+	float: left;	    
+	width: 70%;
+	height: 100%;
+}
+
 /* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
+
+@media screen and (max-height: 750px){
+	header .contenedor-imagen img {
+		height: 80vh;
+		width: 80vh;
+}
+}
+
 @media screen and (max-width: 900px){
 	.navbar .contenedor {
 		flex-wrap: wrap;
@@ -150,11 +215,23 @@ footer .navbar {
 		flex: 1;
 	}
 
+	header .contenedor-imagen img {
+		/*display: block;*/
+		/*height: 10%;*/
+		height: 50vh;
+		width: 50vh;
+		background-color: white;
+	}
 	.contenedor-imagen {
 		height: 50vh;
 	}
 
 	main .contenedor {
 		flex-direction: column;
+	}
+
+	aside {
+		position: static;
+		margin: 40px 0 0 0;
 	}
 }
