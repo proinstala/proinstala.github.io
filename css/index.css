@@ -261,13 +261,18 @@ footer {
         padding-top: 13px;
         font-size: 2.7em;
     }
+    .alto img{
+        padding-right: 3px;
+    }
     .centro a {
         font-size: 10px;
     }
     .fila_1 > div {
+        height: 500px;
         min-width: 350px;
     }
     .fila_2 > div {
+        height: 500px;
         min-width: 350px;
     }
     .fila_3 > div {
@@ -277,16 +282,17 @@ footer {
     #caja1_1 > p{
         font-size: 1.2em;
     }
-    #logo_raspberry {
-        width: 400px;
-    }
     #caja1_2 > img:nth-child(2){
         float: none;
+        clear: both;
     }
     #caja1_2 > img{
-        padding-left: auto;
-        padding-right: auto;
         margin: auto;
+    }
+    #caja1_2 #logo_raspberry{
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     #caja3_1 {
         font-size: 5px;
