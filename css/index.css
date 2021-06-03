@@ -25,7 +25,6 @@ a:hover {
 /*--------- CABECERA ---------------------------------------------*/
 header{
 	background-color: #B9F6CA;
-	/*background-color: seagreen;*/
 	width: 100%;
     padding: 0;
 }
@@ -38,16 +37,15 @@ header{
 }
 .alto p{
     display: inline;
+    float: left;
     font-family: 'Orbitron', sans-serif;
 	font-size: 3em;
-    float: left;
     padding-top: 10px;
 }
 .alto img{
     padding-right: 20px;
 }
 #logo_cabecera{
-    /*height: 4.7em;*/
     float: right;
     
 }
@@ -258,6 +256,14 @@ footer {
 }
 
 @media screen and (max-width: 600px){
+    
+    .alto p{
+        padding-top: 13px;
+        font-size: 2.7em;
+    }
+    .centro a {
+        font-size: 10px;
+    }
     .fila_1 > div {
         min-width: 350px;
     }
@@ -267,7 +273,6 @@ footer {
     .fila_3 > div {
         min-width: 350px;
         font-size: 4px;
-
     }
     #caja1_1 > p{
         font-size: 1.2em;
@@ -275,7 +280,6 @@ footer {
     #logo_raspberry {
         width: 400px;
     }
-    
     #caja1_2 > img:nth-child(2){
         float: none;
     }
