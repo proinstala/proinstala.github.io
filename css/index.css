@@ -212,6 +212,7 @@ main {
     float: right;
 }
 
+
 /*--------- PIE ---------------------------------------------*/
 footer {
     height: 20vh;
@@ -219,6 +220,10 @@ footer {
     background-color: #333333;
 }
 
+
+
+
+/*------------ ADAPTACIONES ---------------------------------*/
 @media screen and (max-width: 1245px){
     
     .centro {
@@ -249,6 +254,38 @@ footer {
 
     #caja3_1 > img {
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .fila_1 > div {
+        min-width: 350px;
+    }
+    .fila_2 > div {
+        min-width: 350px;
+    }
+    .fila_3 > div {
+        min-width: 350px;
+        font-size: 4px;
+
+    }
+    #caja1_1 > p{
+        font-size: 1.2em;
+    }
+    #logo_raspberry {
+        width: 400px;
+    }
+    
+    #caja1_2 > img:nth-child(2){
+        float: none;
+    }
+    #caja1_2 > img{
+        padding-left: auto;
+        padding-right: auto;
+        margin: auto;
+    }
+    #caja3_1 {
+        font-size: 5px;
     }
 }
 
