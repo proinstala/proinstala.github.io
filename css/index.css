@@ -21,6 +21,10 @@ a {
 a:hover {
 	text-decoration: none;
 }
+a:visited{
+    color: black;
+}
+
 
 /*--------- CABECERA ---------------------------------------------*/
 header{
@@ -50,7 +54,7 @@ header{
     
 }
 
-.centro {
+.menu {
 	background-color: seagreen;
 	background-color: #B9F6CA;
 	height: 100%;
@@ -60,7 +64,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
-.centro a {
+.menu a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -73,7 +77,7 @@ header{
 	transition: .3s ease-out all;
 	font-weight: bold;
 }
-.centro a:hover {
+.menu a:hover {
 	background-color: seagreen;
 	/*background-color:#1B5E20;*/ /*color borde de logo*/
 	color: #fff;
@@ -189,22 +193,28 @@ main {
     flex-wrap: nowrap; 
     justify-content: center;
 }
-.fila_3 > div {
+.fila_3 > a {
+    /*div*/
     height: 168px;
     width: 400px;
     max-width: 1500px;
     min-width: 460px;
     margin: 50px;
 	background-color: rgb(210, 218, 202);
-    /*background-color: #B9F6CA;*/
+    transition: .3s ease-out all;
 }
 #caja3_1 {
     flex: 1;
+}
+#caja3_1:hover {
+	background-color: #AFEC27;
 }
 #caja3_1 > p {
 	font-family: 'Orbitron', sans-serif;
 	font-size: 8em;
     float: left;
+    /*padding-top: 1px;*/
+    
 }
 #caja3_1 > img {
     float: right;
@@ -224,11 +234,11 @@ footer {
 /*------------ ADAPTACIONES ---------------------------------*/
 @media screen and (max-width: 1245px){
     
-    .centro {
-        width: 98%;
+    .menu {
+        width: 99.5%;
     }
 
-	.fila_3 > div {
+	.fila_3 > a {
         max-width: 700px;
     }
     
@@ -236,13 +246,17 @@ footer {
         flex: 1;
         font-size: 8px;
     }
+    #caja3_1 > p {
+        padding-top: 6%;
+    }
+
     /*#caja3_1 > img {
         width: 20%;
     }*/
 }
 
 @media screen and (max-width: 750px){
-    .centro a {
+    .menu a {
         font-size: 13px;
     }
 
@@ -250,10 +264,14 @@ footer {
         font-size: 6px;
     }
 
+    .fila_3 > a {
+        height: 25%;
+    }
     #caja3_1 > img {
         width: 25%;
     }
 }
+    
 
 @media screen and (max-width: 600px){
     
@@ -264,8 +282,8 @@ footer {
     .alto img{
         padding-right: 3px;
     }
-    .centro a {
-        font-size: 10px;
+    .menu a {
+        font-size: 9px;
     }
     .fila_1 > div {
         height: 500px;
@@ -275,7 +293,7 @@ footer {
         height: 500px;
         min-width: 350px;
     }
-    .fila_3 > div {
+    .fila_3 > a {
         min-width: 350px;
         font-size: 4px;
     }
@@ -290,12 +308,15 @@ footer {
         margin: auto;
     }
     #caja1_2 #logo_raspberry{
-        width: 400px;
+        width: 300px;
         padding-left: 0px;
         padding-right: 0px;
     }
     #caja3_1 {
         font-size: 5px;
+    }
+    #caja3_1 > p {
+        padding-top: 5%;
     }
 }
 
