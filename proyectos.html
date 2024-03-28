@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProInstala - Proyectos</title>
+    <title>PROinstala - Proyectos</title>
+    <link rel="icon" href="img/ilogo1.ico" type="image/png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="/lib/lineAwesome1.3.0/css/line-awesome.min.css">
+
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/globales.css">
     <link rel="stylesheet" href="style/cabecera.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/proyectos.css">
     <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
@@ -30,11 +34,11 @@
         </div>
     </header>
     <div class="contenedor">
-        <main class="proyectos_principal">
+        <main class="proyectos_principal sombra-contenedor">
             
                 <h1 class="fuente-roboto">PROYECTOS</h1>
                 <p class="articulo__texto">
-                    En esta sección, encontrarás información sobre diversos proyectos que he llevado a cabo, 
+                    En esta sección, encontrarás información sobre diversos proyectos que he llevado a cabo o he colaborado, 
                     ya sean de electrónica, electricidad o programación. Dispondrás de materiales como PDFs, 
                     imágenes, documentación, etc. Es probable que la documentación de cada proyecto esté incompleta, 
                     pero estoy seguro de que podrás comprenderlos y disfrutar viéndolos, así como aprender de la experiencia, 
@@ -52,17 +56,53 @@
                         <img loading="lazy" width="400" src="img/proyecto1.jpg" alt="Imagen Vocalista Festival">
                     </picture>
 
-                    <ul>
+                    <ul class="proyectos_lista-principal">
                         <li><p>hola</p></li>
                         
                         <li class="cla">que tal</li>
+                       
                         <li><p>hola</p></li>
+
                         <li><a class="menu__footer__enlace cla" href="#">-INICIO-</a></li>
                     </ul>
                 </div>
                 
-            
         </main>
+
+        <section class="proyectos sombra-contenedor">
+            <div class="proyectos__seccion">
+                <div class="proyectos__titulo">
+                    <i class="las la-microchip"></i>
+                    <h3>Electrónica</h3>
+                </div>
+                
+                <p class="proyectos__enlace"><a href="proyecto_compati.html">Compati</a></p>
+                <p class="proyectos__enlace"><a href="#">Programador horario</a></p>
+                <p class="proyectos__enlace"><a href="#">Celetol</a></p>
+                <p class="proyectos__enlace"><a href="#">Control inalámbrico</a></p>
+            </div>
+            <div class="proyectos__seccion">
+                <div class="proyectos__titulo">
+                    <i class="las la-plug"></i>
+                    <h3>Electricidad</h3>
+                </div>
+                
+                <p class="proyectos__enlace"><a href="#">proyecto 1</a></p>
+                <p class="proyectos__enlace"><a href="#">proyecto 2</a></p>
+                <p class="proyectos__enlace"><a href="#">proyecto 3</a></p>
+            </div>
+            <div class="proyectos__seccion">
+                <div class="proyectos__titulo">
+                    <i class="las la-code"></i>
+                    <h3>Programación</h3>
+                </div>
+                
+                <p class="proyectos__enlace"><a href="#">Lis_Gestión</a></p>
+                <p class="proyectos__enlace"><a href="#">proyecto 2</a></p>
+                <p class="proyectos__enlace"><a href="#">proyecto 3</a></p>
+            </div>
+        </section>
+
     </div>
     
 

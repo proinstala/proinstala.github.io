@@ -80,25 +80,3 @@
 	grid-area: izquierda;
 }
 
-/**** PROYECTOS ******/
-.proyectos_principal {
-	background-color: var(--fondoOscuro);
-	display: flex;
-	flex-direction: column;
-	font-size: 0;   /*Para quitar fraja debajo de imagen*/
-	line-height: 0; /*Para quitar fraja debajo de imagen*/
-	margin-bottom: 4rem;
-	align-items: center;
-}
-
-.flex {
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.cla {
-	color: blue;
-	background-color: blueviolet;
-	font-size: 1rem;
-}

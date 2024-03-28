@@ -1,0 +1,81 @@
+/**** PROYECTOS ******/
+.proyectos_principal {
+	background-color: var(--fondoOscuro);
+	display: flex;
+	flex-direction: column;
+	font-size: 0;   /*Para quitar fraja debajo de imagen*/
+	line-height: 0; /*Para quitar fraja debajo de imagen*/
+	margin-bottom: 4rem;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.proyectos_lista-principal {
+	display: none;
+}
+@media (min-width: 768px) {
+	.proyectos_lista-principal {
+		display: inline;
+	}
+}
+
+
+.cla {
+	color: blue;
+	background-color: blueviolet;
+	font-size: 1rem;
+}
+
+.proyectos {
+    background-color: var(--fondoOscuro);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+    justify-content: space-around;
+	align-items: center;
+	padding: 2rem 0;
+	gap: 1rem;
+}
+@media (min-width: 768px) {
+	.proyectos {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+
+.proyectos__seccion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.proyectos__titulo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 4rem;
+}
+
+.proyectos__titulo-imagen {
+	height: 2rem;
+}
+
+.proyectos__enlace {
+	margin: 0.5rem 0;
+	color: black;
+}
+
+.proyectos__enlace a:hover{
+	color: var(--primario);
+	font-weight: 700;
+}
+
+/** PROYECTO COMPATI **/
+
+.titulo_secundario {
+	align-self: flex-start; 
+	margin-bottom: -1rem; 
+	padding: 0 2rem;
+}
+
