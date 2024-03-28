@@ -1,0 +1,125 @@
+/**** Fuentes ****
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+*/
+
+:root {
+	/** Colores **/
+	--primario: #2e8b57; /*seagreen*/
+	--secundario: #B9F6CA;
+	--terciario: #AFEC27;
+
+	--fondoClaro: #ebf5e7;
+	--fondoOscuro: #d2daca;
+	--fondoFooter: #333333;
+	--textoFooter: #6e6e6e;
+
+	--blanco: #fff;
+	--negro: #000;
+
+
+	/* Fuentes */
+	--funentePrincipal: 'Roboto', sans-serif;
+	--funenteLogo: 'Orbitron', sans-serif;
+}
+
+html {
+  box-sizing: border-box; /*Configuracion para tamaño de cajas*/
+  font-size: 62.5%; /*Ajuste para REM. 1rem = 10px */
+}
+body {
+	font-size: 16px; /*Ajuste para REM, ahora 1 rem es 10px (1rem = 10px) */
+	background-color: var(--fondoClaro);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;/*Configuracion para tamaño de cajas*/
+}
+
+/** Globales **/
+.contenedor {
+	max-width: 120rem; /*maximo 1200px*/
+	width: 90%; /*minimo*/
+	/*width: min(90%, 120rem);*/ /*Esto es lo mismo que las dos lineas de arriva*/
+	margin: 5rem auto; /*Centrado horizontal*/
+}
+
+a {
+  	text-decoration: none;
+	outline: none; /*contorno*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+  	font-family: var(--funentePrincipal);
+	line-height: 1.2;
+	margin: 1rem 0;
+}
+
+h1 {
+  	font-size: 4rem;
+}
+
+h2 {
+  	font-size: 3.6rem;
+}
+
+h3 {
+  	font-size: 2.8rem;
+}
+
+h4 {
+  	font-size: 2rem;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+img {
+  	max-width: 100%; /*imagen responsive*/
+}
+
+.letras-logo {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+/** Utilidades **/
+.no-margin {
+  	margin: 0;
+}
+
+.no-padding {
+  	padding: 0;
+}
+
+.centrar-texto {
+  	text-align: center;
+}
+
+.texto-negrita {
+	font-weight: 700;
+}
+
+.texto-color-primario {
+	color: var(--primario);
+}
+
+.menu-seleccionado {
+	border-bottom: var(--primario) 5px solid;
+}
+
+.fuente-roboto {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+}
+

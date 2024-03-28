@@ -2,55 +2,128 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROinstala</title>
-    <link rel="icon" href="graficos/ilogo1.ico" type="image/png" sizes="16x16">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css"> 
+    <title>ProInstala - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/globales.css">
+    <link rel="stylesheet" href="style/cabecera.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
     <header>
-        <div class="alto">
-            <p>PROinstala</p>
-            <img id="logo_cabecera" src="graficos/logo1_84.png" alt="Fallo imagen">
+        <div class="cabecera">
+            <p class="cabecera__texto">PROinstala</p>
+            <img class="cabecera__imagen" src="img/logo1_84.png" alt="Logotipo">
         </div>
         <div class="menu">
-            <a href="#">INICIO</a>
-			<a href="#">SERVICIOS</a>
-			<a href="#">TALLER</a>
-			<a href="#">PROYECTOS</a>
-			<a href="#">CONTACTO</a>
+            <nav class="menu__contenedor">
+                <a class="menu__enlace menu-seleccionado" href="#">INICIO</a>
+                <a class="menu__enlace" href="#">SERVICIOS</a>
+                <a class="menu__enlace" href="#">TALLER</a>
+                <a class="menu__enlace" href="proyectos.html">PROYECTOS</a>
+                <a class="menu__enlace" href="#">CONTACTO</a>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="fila_1">
-            <div id="caja1_1">
-                <p>Bienvenido a <span>PROinstala.</span><br/><br/> Aquí encontraras contenido relacionado con electrónica, programación y creación de proyectos con Arduino, 
-                    Rasberry pi , Esp32 y otras tarjetas de desarrollo. Guías y tutoriales de electrónica y programación. Programación con Python. </p>
-            </div>
-            <div id="caja1_2">
-                <img src="graficos/arduino_logo.png" alt="Fallo imagen">
-                <img id="logo_python" src="graficos/python_logo.png" alt="Fallo imagen">
-                <img id="logo_raspberry" src="graficos/raspberry_logo.png" alt="Fallo imagen">
-            </div>
-        </div>
-        <div class="fila_2">
-            <div id="caja2_1">
-                <img src="graficos/logo1_525.png" alt="fallo imagen">
-            </div>
-            <div id="caja2_2"></div>
-        </div>
-        <div class="fila_3">
-            <a id="caja3_1" href="#logo_cabecera">
-                <p>PROinstala</p>
-                <img src="graficos/logo_relleno_2_168.png" alt="Fallo imagen">
-            </a>
-        </div>
+
+
+    <main class="contenedor">
+            
+        <article class="articulo">
+            <p class="articulo__texto">
+                Bienvenido al espacio de <span class="letras-logo">PROinstala</span>. <br> <br>
+                Soy David J.A. y esta página es mi espacio digital, un rincón donde compartiré contigo mi pasión por la programación, la electrónica y la electricidad. <br>
+                Te invito a explorar todos los rincones de este sitio y disfrutar con su contenido. Descubre cómo la programación, la electrónica y la electricidad se entrelazan para formar un tejido de innovación.
+                Si te gusta algo de lo que encuentres aquí y puedes aprovecharlo, cópialo, estudíalo y adáptalo a tus necesidades.
+            </p>
+                
+            <img class="articulo__imagen" src="img/codigo1.jpg" alt="codigo fuente">
+        </article>
+        
+        <section class="sobreMi">
+            <article class="sobreMi__articulo">
+                <p class="articulo__texto">
+                    Mi experiencia se fundamenta en sólidos conocimientos en electrónica,
+                    respaldados por mi título de
+                    <span class="texto-negrita">
+                        Grado Medio en Equipos Electrónicos de Consumo.
+                    </span> <br>
+                    Desde mis inicios en el mundo de la electrónica, 
+                    he adquirido una comprensión práctica y realista. 
+                    No solo me he limitado a estudiar circuitos en un aula, 
+                    sino que he desmontado dispositivos, reparado electrodomesticos,
+                    resuelto problemas prácticos 
+                    y aplicado mis conocimientos de manera tangible.
+                </p>
+
+                <img class="sobreMi__imagen" src="img/electronica.png" alt="imagen programación">
+            </article>
+
+            <article class="sobreMi__articulo">
+                <p class="articulo__texto">
+                    Con una sólida trayectoria de 
+                    <span class="texto-negrita">
+                        10 años como electricista industrial
+                    </span>,
+                    adquiriendo experiencia y desempeñando un papel integral en la ejecución de montajes eléctricos,
+                    la configuración de cuadros eléctricos y la realización
+                    de labores de mantenimiento en diversas plantas y fábricas.<br>
+                    <br>
+                    He participado activamente en el montaje y mantenimiento de sistemas eléctricos,
+                    garantizando su funcionamiento eficiente y seguro.
+                    
+                </p>
+                
+                <img class="sobreMi__imagen" src="img/electricidad.png" alt="imagen programación">
+            </article>
+
+            <article class="sobreMi__articulo">
+                <p class="articulo__texto">
+                    Disfruto explorar el vasto mundo de la programación en general,
+                    encontrando fascinación en la creación de soluciones innovadoras y eficientes.
+                    Además, respaldo mi interés con un título de 
+                    <span class="texto-negrita">
+                        Grado Superior en Desarrollo de Aplicaciones Multiplataforma.
+                    </span>
+                    Este logro no solo certifica mi formación académica,
+                    sino también mi dedicación a comprender y aplicar
+                    las complejidades de la programación para diversas plataformas.
+                </p>
+                
+                <img class="sobreMi__imagen" src="img/programacion.png" alt="imagen programación">
+            </article>
+
+        </section>
     </main>
-    <footer>piede de pagian</footer>
+ 
+    
+    <footer class="footer">
+        <div>
+            <p>
+                <span class="letras-logo texto-color-primario">PROinstala</span>
+            </p>
+            <p>
+                Todos los derechos reservados.
+            </p>
+        </div>
+
+        <div>
+            <p>Enlaces</p>
+        </div>
+        
+        
+        <nav class="menu__footer">
+            <a class="menu__footer__enlace" href="#">-INICIO-</a>
+            <a class="menu__footer__enlace" href="#">-SERVICIOS-</a>
+            <a class="menu__footer__enlace" href="#">-TALLER-</a>
+            <a class="menu__footer__enlace" href="proyectos.html">-PROYECTOS-</a>
+            <a class="menu__footer__enlace" href="#">-CONTACTO-</a>
+        </nav>
+        
+    </footer>
 </body>
 </html>

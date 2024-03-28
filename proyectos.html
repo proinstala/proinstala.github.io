@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProInstala - Proyectos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/globales.css">
+    <link rel="stylesheet" href="style/cabecera.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <p class="cabecera__texto">PROinstala</p>
+            <img class="cabecera__imagen" src="img/logo1_84.png" alt="Logotipo">
+        </div>
+        <div class="menu">
+            <nav class="menu__contenedor">
+                <a class="menu__enlace" href="index.html">INICIO</a>
+                <a class="menu__enlace" href="#">SERVICIOS</a>
+                <a class="menu__enlace" href="#">TALLER</a>
+                <a class="menu__enlace menu-seleccionado" href="#">PROYECTOS</a>
+                <a class="menu__enlace" href="#">CONTACTO</a>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor">
+        <main class="proyectos_principal">
+            
+                <h1 class="fuente-roboto">PROYECTOS</h1>
+                <p class="articulo__texto">
+                    En esta sección, encontrarás información sobre diversos proyectos que he llevado a cabo, 
+                    ya sean de electrónica, electricidad o programación. Dispondrás de materiales como PDFs, 
+                    imágenes, documentación, etc. Es probable que la documentación de cada proyecto esté incompleta, 
+                    pero estoy seguro de que podrás comprenderlos y disfrutar viéndolos, así como aprender de la experiencia, 
+                    tal como lo hice yo al realizarlos.
+                </p>
+                    
+                <div class="flex">
+                    <picture>
+
+                        <source srcset="img/ideas.png" type="image/png">
+
+                        <source srcset="img/proyecto1.avif" type="image/avif">
+                        <source srcset="img/proyecto1.webp" type="image/webp">
+        
+                        <img loading="lazy" width="400" src="img/proyecto1.jpg" alt="Imagen Vocalista Festival">
+                    </picture>
+
+                    <ul>
+                        <li><p>hola</p></li>
+                        
+                        <li class="cla">que tal</li>
+                        <li><p>hola</p></li>
+                        <li><a class="menu__footer__enlace cla" href="#">-INICIO-</a></li>
+                    </ul>
+                </div>
+                
+            
+        </main>
+    </div>
+    
+
+    <footer class="footer">
+        <div>
+            <p>
+                <span class="letras-logo texto-color-primario">PROinstala</span>
+            </p>
+            <p>
+                Todos los derechos reservados.
+            </p>
+        </div>
+
+        <div>
+            <p>Enlaces</p>
+        </div>
+        
+        
+        <nav class="menu__footer">
+            <a class="menu__footer__enlace" href="#">-INICIO-</a>
+            <a class="menu__footer__enlace" href="#">-SERVICIOS-</a>
+            <a class="menu__footer__enlace" href="#">-TALLER-</a>
+            <a class="menu__footer__enlace" href="proyectos.html">-PROYECTOS-</a>
+            <a class="menu__footer__enlace" href="#">-CONTACTO-</a>
+        </nav>
+        
+    </footer>
+
+</body>
+</html>
