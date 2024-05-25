@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass Effect with Gradient Background</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #AFEC27;
+    background: -moz-linear-gradient(45deg, #AFEC27 0%, #2e8b57 100%);
+    background: -webkit-linear-gradient(45deg, #AFEC27 0%, #2e8b57 100%);
+    background: linear-gradient(45deg, #AFEC27 0%, #2e8b57 100%);
+    font-family: Arial, sans-serif;
+  }
+
+  .glass {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+  }
+</style>
+</head>
+<body>
+  <div class="glass">
+    Efecto de cristal transparente
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body.fijar-body {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay picture {
+    display: block;
+    max-width: 80rem;
+    border: 2px solid var(--terciario);
+}
+
+.btn-cerrar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--terciario);
+    color: #000;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
+.btn-cerrar:hover {
+    cursor: pointer;
+}

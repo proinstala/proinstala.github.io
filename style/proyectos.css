@@ -71,11 +71,76 @@
 	font-weight: 700;
 }
 
+
+
 /** PROYECTO COMPATI **/
 
 .titulo_secundario {
 	align-self: flex-start; 
 	margin-bottom: -1rem; 
 	padding: 0 2rem;
+}
+
+.contenedor__cards {
+	/*
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	*/
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	cursor: pointer;
+}
+
+@media (min-width: 900px) {
+	.contenedor__cards {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+@media (min-width: 500px) and (max-width: 899px) {
+    .contenedor__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+	display: flex;
+		flex-direction: column;
+		
+		width: 100%;
+		background-color: var(--blanco);
+	
+		border-radius: 5px;
+}
+/*
+@media (min-width: 900px) {
+	.card {
+		width: 25rem;
+	}
+}
+@media (min-width: 500px) and (max-width: 899px) {
+    .card {
+        width: 30rem;
+    }
+}
+
+*/
+
+.card__imagen {
+	padding: 1rem;
+	background-color: var(--fondoOscuro);
+}
+
+.card__imagen img {
+	width: 100%;
+}
+
+.card p {
+	/* margin: 2rem 1rem; */
+	margin: 0;
+	padding: 2rem 1rem 2rem 1rem;
+	border-radius: 0px 0px 5px 5px;
+
 }
 

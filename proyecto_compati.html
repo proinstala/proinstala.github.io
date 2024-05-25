@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROinstala - filtro lamparas</title>
+    <title>PROinstala - Proyecto Compati</title>
     <link rel="icon" href="img/ilogo1.ico" type="image/png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/proyectos.css">
     <link rel="stylesheet" href="style/footer.css">
+
+    <link rel="stylesheet" href="style/overlay.css">
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
         <div class="menu">
             <nav class="menu__contenedor">
                 <a class="menu__enlace" href="index.html">INICIO</a>
-                <a class="menu__enlace" href="#">SERVICIOS</a>
+                <a class="menu__enlace" href="prueba.html">SERVICIOS</a>
                 <a class="menu__enlace" href="#">TALLER</a>
                 <a class="menu__enlace" href="proyectos.html">PROYECTOS</a>
                 <a class="menu__enlace" href="#">CONTACTO</a>
@@ -53,10 +55,8 @@
             </p>
             <div class="flex">
                 <picture>
-                    <source srcset="img/proyecto_compati/foto1.jpg" type="image/png">
-                    <source srcset="img/proyecto1.avif" type="image/avif">
-                    <source srcset="img/proyecto1.webp" type="image/webp">
-                    <img loading="lazy" width="400" src="img/proyecto1.jpg" alt="Imagen Vocalista Festival">
+                    <source srcset="img/proyecto_compati/foto_1.jpg" type="image/png">
+                    <img loading="lazy" width="800px" src="img/proyecto_compati/foto_1.jpg" alt="Cuadro electrico">
                 </picture>
 
                 
@@ -65,8 +65,57 @@
         </main>
 
         
+        <div class="contenedor__cards">
+            
+            <div class="card">
+                <div class="card__imagen">
+                    <img src="img/proyecto_compati/foto_2.jpg" alt="">
+                </div>
+                <p>La Pantalla tactil es la interfaz de usuario principal para poder interactuar con Compati. En esta foto se puede ver el menu principal donde marca la hora, 
+                    la temperatura y los botones principales.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card__imagen">
+                    <img src="img/proyecto_compati/foto_6.jpg" alt="">
+                </div>
+                <p>El armario electrico esta hecho de plastico ABS. Su tamaño es de 30cm de ancho por 40 de alto.
+                     En su interior se encuentran todos los componentes electricos y electronicos para el control de la instalación. 
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card__imagen">
+                    <img src="img/proyecto_compati/foto_3.jpg" alt="">
+                </div>
+                <p>A la izquierda, el ardunino principal con un escudo acoplado encima 
+                    y a la derecha la placa uxiliar de control con los driver de salidas y entradas, 
+                    el modulo de reloj y el modulo Bluetooth. </p>
+            </div>
+
+            <div class="card">
+                <div class="card__imagen">
+                    <img src="img/proyecto_compati/foto_4.jpg" alt="">
+                </div>
+                <p>El armario cuenta con interruptor magnetotermico de 10Amp y fuente de alimentacion con salida regulada a 9 Vdc.</p>
+            </div>
+
+            <div class="card">
+                <div class="card__imagen">
+                    <img src="img/proyecto_compati/foto_5.jpg" alt="">
+                </div>
+                <p>En la puerta del armario se encuentra mecanizados los pulsadores de control de las zonas principales y la pantalla tactil.</p>
+            </div>
+
+            
+            
+        </div>
+
 
     </div>
+
+    
     
 
     <footer class="footer">
@@ -94,5 +143,6 @@
         
     </footer>
 
+    <script src="js/proyecto_compati.js"></script>
 </body>
 </html>
