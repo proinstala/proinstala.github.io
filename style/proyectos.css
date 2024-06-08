@@ -3,27 +3,10 @@
 	background-color: var(--fondoOscuro);
 	display: flex;
 	flex-direction: column;
-	font-size: 0;   /*Para quitar fraja debajo de imagen*/
 	line-height: 0; /*Para quitar fraja debajo de imagen*/
 	margin-bottom: 4rem;
 	align-items: center;
 	padding: 2rem 0;
-}
-
-.proyectos_lista-principal {
-	display: none;
-}
-@media (min-width: 768px) {
-	.proyectos_lista-principal {
-		display: inline;
-	}
-}
-
-
-.cla {
-	color: blue;
-	background-color: blueviolet;
-	font-size: 1rem;
 }
 
 .proyectos {
@@ -143,4 +126,19 @@
 	border-radius: 0px 0px 5px 5px;
 
 }
+
+.enlace__descarga--icono {
+	font-size: 3rem;
+}
+
+.enlace__descarga {
+	/* align-self: flex-start; */
+	padding: 2rem;
+	margin-left: 2rem;
+}
+.enlace__descarga:hover {
+	background-color: var(--terciario);
+}
+
+
 
