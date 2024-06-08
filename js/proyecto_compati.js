@@ -10,13 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function imagenOverlay(card) {
     const img = card.querySelector('img');
-
     const imagen = document.createElement('picture');
-    imagen.innerHTML = `
-        <source srcset="${img.getAttribute('src')}" type="image/png">
-        <img loading="lazy" width="800" src="${img.getAttribute('src')}" alt="imagen ampliada">
-        `;   
 
+    const src = img.getAttribute("src")
+    const nombreImagen = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
+
+    imagen.innerHTML = `
+        <source srcset="img/proyecto_compati/webp/${nombreImagen}.webp" type="image/webp">
+        <source srcset="img/proyecto_compati/avif/${nombreImagen}.avif" type="image/avif">
+        <img loading="lazy" width="800" src="img/proyecto_compati/${nombreImagen}.jpg" alt="imagen ampliada">
+        `;   
+    console.log(imagen);
+    
     //Crear el Overlay con la imagen.
     const overlay = document.createElement('DIV');
     overlay.appendChild(imagen);
@@ -49,5 +54,6 @@ function imagenOverlay(card) {
     const body = document.querySelector('body');
     body.appendChild(overlay);
     body.classList.add('fijar-body');
+
 } 
 

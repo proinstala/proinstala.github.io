@@ -17,6 +17,8 @@
 	--blanco: #fff;
 	--negro: #000;
 
+	--rojoAtencion: #fa2856;
+
 
 	/* Fuentes */
 	--funentePrincipal: 'Roboto', sans-serif;
@@ -26,6 +28,7 @@
 html {
   box-sizing: border-box; /*Configuracion para tamaño de cajas*/
   font-size: 62.5%; /*Ajuste para REM. 1rem = 10px */
+  scroll-behavior: smooth;
 }
 body {
 	font-size: 16px; /*Ajuste para REM, ahora 1 rem es 10px (1rem = 10px) */

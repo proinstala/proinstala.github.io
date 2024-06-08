@@ -12,13 +12,14 @@ body.fijar-body {
     height: 100%;
     display: grid;
     place-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .overlay picture {
     display: block;
     max-width: 80rem;
     border: 2px solid var(--terciario);
+	line-height: 0; /*Para quitar fraja debajo de imagen*/
 }
 
 .btn-cerrar {
@@ -30,8 +31,14 @@ body.fijar-body {
     display: grid;
     place-items: center;
     font-weight: 700;
+    font-size: 2.5rem;
+    border: 2px solid var(--rojoAtencion);
+    cursor: pointer;
+    margin: 0;
+    align-self: start;
+}
+.btn-cerrar:hover {
+    background-color: var(--rojoAtencion);
+    border-color: var(--terciario);
 }
 
-.btn-cerrar:hover {
-    cursor: pointer;
-}
